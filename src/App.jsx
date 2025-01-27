@@ -13,8 +13,7 @@ function App() {
 
   return (
     <>
-      <div className="h-screen bg-cover bg-linear-45 from-fuchsia-300 via-orange-200 to-sky-100   dark:from-rose-900 dark:via-fuchsia-900 dark:to-violet-950 z-[-3]">
-      <div className="absolute w-96 h-96 bg-orange-700 rounded-full z-[-1]"></div>
+      <div className="h-screen bg-cover bg-[url('/bg-glass.png')]">
       {/*Navbar*/}
 
       <nav className="max-w-full bg-stone-300/40 dark:bg-zinc-950/50 backdrop-blur-md mx-auto flex max-sm:flex-col px-6 py-2 shadow-lg">
