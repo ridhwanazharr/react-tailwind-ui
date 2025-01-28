@@ -1,8 +1,61 @@
 @import "tailwindcss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import "./hljs.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-sans: InterVariable, sans-serif;
 }
+
+@layer components {
+
+  /* Card */
+
+  .card{
+    @apply h-full w-full relative flex flex-col p-6 text-black dark:text-white  bg-white/25 dark:bg-black/25 rounded-lg drop-shadow-lg backdrop-blur-lg border-1 border-black/25 dark:border-white/25
+  }
+
+  .card-close{
+    @apply absolute top-1 right-2 text-xl text-black/50 dark:text-white/50 hover:text-red-600 transition-colors duration-150 ease-in-out
+  }
+
+  .card-header{
+    @apply flex pb-3 border-b-1 dark:border-white/25 border-black/25 font-bold
+  }
+
+  .card-profile{
+    @apply w-15 h-15 rounded-full border-1 dark:border-white/50 border-black/50
+  }
+
+  .card-profile-text{
+    @apply ms-4 flex-col font-medium
+  }
+
+  .card-content{
+    @apply flex-grow py-3 font-light
+  }
+
+  .card-footer{
+    @apply pt-3 flex border-t-1 dark:border-white/25 border-black/25
+  }
+
+  /* Code Block */
+
+  .code-block{
+    @apply h-full w-full m-2 p-6 font-bold rounded-lg drop-shadow-lg border-1 border-black/25 dark:border-white/25
+  }
+
+  /* Button */
+
+  .btn-primary{
+    @apply font-medium text-sm py-1 px-4 mx-1 border-1 text-white dark:border-white/50 border-black/50 bg-sky-700/50 hover:bg-sky-500/50 transition-colors duration-150 ease-in-out rounded-xl
+  }
+
+  .btn-warning{
+    @apply font-medium text-sm py-1 px-4 mx-1 border-1 dark:border-white/50 border-black/50 bg-orange-700/50 hover:bg-orange-500/50 transition-colors duration-150 ease-in-out rounded-xl
+  }
+
+}
+
+
