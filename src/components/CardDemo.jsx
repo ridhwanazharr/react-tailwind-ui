@@ -31,7 +31,7 @@ const CardDemo = () => {
     );
 
     const cardHtml = `
-        <div class="card resize overflow-auto">
+        <div class="card">
             <div class="card-close">
                 <i class="bi bi-x-circle"></i>
             </div>

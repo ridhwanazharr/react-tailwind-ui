@@ -8,7 +8,7 @@ const CodeBlock = ({ language, code }) => {
     }, []);
   
     return (
-      <div className="text-xs font-bold border-1 border-black/50 dark:border-white/50 rounded-xl">
+      <div className="">
         <pre>
           <code className={`language-${language}`}>{code}</code>
         </pre>
