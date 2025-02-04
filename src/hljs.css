@@ -1,5 +1,5 @@
 pre code.hljs {
-    @apply text-xs font-bold block overflow-x-auto p-2 rounded-xl bg-white/60 dark:bg-black/85 drop-shadow-md backdrop-blur-xl border-1 border-black/50 dark:border-white/50 text-black dark:text-white;
+    @apply text-xs font-bold block overflow-x-auto p-2 bg-white dark:bg-neutral-950 drop-shadow-md border-1 border-black/50 dark:border-white/50 text-black dark:text-white;
   }
   
   code.hljs {
@@ -8,7 +8,7 @@ pre code.hljs {
   
   /* General HLJS Styling */
   .hljs {
-    @apply bg-zinc-900 text-gray-300 rounded-xl;
+    @apply bg-zinc-900 text-gray-300;
   }
   
   .hljs-keyword,

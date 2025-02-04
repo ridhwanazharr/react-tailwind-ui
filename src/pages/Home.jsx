@@ -1,4 +1,5 @@
 import CardDemo from "../components/CardDemo";
+import Button from "../components/Button"
 
 const Home = () => {
     return ( 
@@ -10,8 +11,8 @@ const Home = () => {
             <div>
                 <h2 className="text-3xl text-black dark:text-white  font-bold my-6">A Stunning, Modern, and Responsive Web Theme</h2>
                 <p className="text-lg text-black dark:text-white font-medium mb-5">brings elegance and functionality together with a sleek, glassmorphic design, smooth transitions, and fully responsive layouts. Whether you're building a portfolio, a business website, or a personal blog, our theme ensures a visually stunning and seamless experience.</p>
-                <div className="flex">
-                <a href="" className="btn-primary">Get Started</a>
+                <div className="flex items-center justify-center">
+                <Button link="#" size="sm" variant="warning" icon="fa-brands fa-github" label="See on Github"/>
                 </div>
             </div>
             <div className="h-96 w-full">

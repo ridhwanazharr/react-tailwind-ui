@@ -14,7 +14,7 @@
   /* Card */
 
   .card{
-    @apply h-full w-full relative flex flex-col p-6 text-black dark:text-white  bg-white/25 dark:bg-black/25 rounded-lg drop-shadow-lg backdrop-blur-lg border-1 border-black/25 dark:border-white/25
+    @apply h-full w-full relative flex flex-col p-6 text-black dark:text-white  bg-white/10 dark:bg-black/60 rounded-lg drop-shadow-lg backdrop-blur-xl outline-2 outline-black/25 dark:outline-white/15
   }
 
   .card-close{
@@ -34,11 +34,11 @@
   }
 
   .card-content{
-    @apply flex-grow py-3 font-light
+    @apply flex-grow py-3 font-medium
   }
 
   .card-footer{
-    @apply pt-3 flex border-t-1 dark:border-white/25 border-black/25
+    @apply pt-3 flex space-x-2 border-t-1 dark:border-white/25 border-black/25
   }
 
   /* Code Block */
@@ -49,12 +49,32 @@
 
   /* Button */
 
+  .btn-sm{
+    @apply font-bold text-sm py-2 px-4 inline-flex text-center items-center rounded-2xl cursor-pointer space-x-1
+  }
+
+  .btn-md{
+    @apply font-bold text-base py-2 px-4 flex text-center items-center rounded-2xl cursor-pointer space-x-1
+  }
+
+  .btn-lg{
+    @apply font-bold text-lg py-2 px-4 flex text-center items-center rounded-2xl cursor-pointer space-x-2
+  }
+
+  .btn-xl{
+    @apply font-bold text-xl py-3 px-6 flex text-center items-center rounded-2xl cursor-pointer space-x-2
+  }
+
+  .btn-2xl{
+    @apply font-bold text-2xl py-3 px-6 flex text-center items-center rounded-2xl cursor-pointer space-x-3
+  }
+
   .btn-primary{
-    @apply font-medium text-sm py-1 px-4 mx-1 border-1 text-white dark:border-white/50 border-black/50 bg-sky-700/50 hover:bg-sky-500/50 transition-colors duration-150 ease-in-out rounded-xl
+    @apply bg-blue-500/50 hover:bg-blue-200/50 text-black dark:bg-blue-900/50 hover:dark:bg-blue-500/50 dark:text-white backdrop-blur-xl drop-shadow-lg outline-1 outline-black/25 dark:outline-white/25 transition-colors duration-150 ease-in-out
   }
 
   .btn-warning{
-    @apply font-medium text-sm py-1 px-4 mx-1 border-1 dark:border-white/50 border-black/50 bg-orange-700/50 hover:bg-orange-500/50 transition-colors duration-150 ease-in-out rounded-xl
+    @apply bg-orange-500/50 hover:bg-orange-300/50 text-black dark:bg-orange-800/50 hover:dark:bg-orange-500/50 dark:text-white backdrop-blur-xl drop-shadow-lg outline-1 outline-black/25 dark:outline-white/25 transition-colors duration-150 ease-in-out
   }
 
   /* Dropdown */
