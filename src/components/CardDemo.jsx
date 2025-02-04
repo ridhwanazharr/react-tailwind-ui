@@ -10,7 +10,7 @@ const CardDemo = () => {
                 <i className="bi bi-x-circle"></i>
             </div>
             <div className="card-header">
-                <img src="/person.jpg" alt="Profile" className="card-profile" />
+                <img src="/person2.jpg" alt="Profile" className="card-profile" />
                 <div className="card-profile-text">
                     <h2 className="text-xl">John Doe</h2>
                     <a href="#" className="text-md opacity-75">@realjohndoe</a>

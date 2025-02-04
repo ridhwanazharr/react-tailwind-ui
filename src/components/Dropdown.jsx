@@ -5,13 +5,18 @@ const Dropdown = ({label, children, className}) => {
 
     return (
         <div className={className}>
-            <a className="flex cursor-pointer dark:text-white text-black" onClick={() => setisOn(!isOn)}>
+            <a className="flex cursor-pointer dark:text-white text-black select-none" onClick={() => setisOn(!isOn)}>
                 {label} 
                 <div className={`ms-1 transition-transform duration-100 ease-in-out ${isOn && "-rotate-90"} `}>
                     <i className='bi bi-caret-down'></i>
                 </div>
             </a>
-            {isOn && children}
+            {isOn && (
+            <div className="dropdown-menu" onBlur={() => setisOn(!isOn)}>
+                {children}
+            </div>)}
+            
+            
         </div> 
         
      );

@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "./hljs.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -56,6 +57,45 @@
     @apply font-medium text-sm py-1 px-4 mx-1 border-1 dark:border-white/50 border-black/50 bg-orange-700/50 hover:bg-orange-500/50 transition-colors duration-150 ease-in-out rounded-xl
   }
 
+  /* Dropdown */
+
+  .dropdown-menu{
+    @apply absolute z-50 mt-4 py-2 px-2 backdrop-blur-xl flex flex-col bg-white/50 dark:bg-black/70 text-black dark:text-white rounded-xl border-1 border-black/50 dark:border-white/50
+  }
+  .dropdown-item{
+    @apply my-1 hover:bg-black/15 dark:hover:bg-white/25 px-2 py-0.5 min-w-40 rounded-lg flex items-center transition-all duration-150 ease-in-out
+  }
+
+  .dropdown-item-icon{
+    @apply opacity-50 me-2 text-xs
+  }
+
+  .dropdown-border{
+    @apply border-t-1 border-black/50 dark:border-white/50
+  }
+
+  /* Navbar */
+
+  .navbar{
+    @apply z-20 max-w-full bg-white/15 dark:bg-zinc-950/50 backdrop-blur-md mx-auto flex max-sm:flex-col px-6 py-4 shadow-lg relative
+  }
+
+  .nav-logo{
+    @apply font-bold text-4xl bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent
+  }
+
+  .nav-links{
+    @apply  px-3 py-1 mx-0.5 flex justify-center items-center text-center rounded-xl transition duration-150 ease-in-out  text-black dark:text-white hover:bg-black/10 dark:hover:bg-white/10
+  }
+
+  .nav-links-active{
+    @apply underline decoration-2 dark:decoration-white/50 decoration-black/50 underline-offset-6 bg-black/5 dark:bg-white/5
+  }
+
+  /* Search Bar */
+  .search-bar{
+    @apply rounded-full bg-zinc-950/10 dark:bg-white/10 dark:text-white font-light h-10 px-5 focus:outline-none border-black/15 dark:border-white/15 border-2 focus:border-zinc-950/50 focus:shadow-lg focus:bg-transparent  dark:focus:border-white transition-all duration-200
+  }
 }
 
 

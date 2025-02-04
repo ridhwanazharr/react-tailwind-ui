@@ -1,0 +1,21 @@
+{"blogs" : [
+    {
+      "id": 1,
+      "title": "Introduction to JSON",
+      "author": "John Doe",
+      "date": "2025-01-31"
+    },
+    {
+      "id": 2,
+      "title": "Advanced JavaScript",
+      "author": "Jane Smith",
+      "date": "2025-01-30"
+    },
+    {
+      "id": 3,
+      "title": "Mastering Laravel",
+      "author": "Alice Johnson",
+      "date": "2025-01-29"
+    }
+  ]
+}
