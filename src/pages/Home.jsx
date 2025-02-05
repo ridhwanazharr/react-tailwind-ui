@@ -1,23 +1,33 @@
 import CardDemo from "../components/CardDemo";
-import Button from "../components/Button"
+import Button from "../components/Button";
+import Card from "../components/Card";
+import Heading from "../components/Heading";
+import Input from "../components/Input";
+import DatePicker from "../components/DatePicker";
 
 const Home = () => {
     return ( 
     <div>
         <div className="max-w-3/4 mx-auto my-12">
-            <h1 className="col-span-2 text-5xl text-black dark:text-white  font-bold my-6 drop-shadow-lg">GlassUI - Elevate Your Web Experience.</h1>
+            <Heading size="4xl" variant="drop-shadow-lg">Glassmorphic UI Components. open source</Heading>
             </div>
             <div className="max-w-3/4 grid grid-cols-2 max-sm:grid-cols-1 gap-4 mx-auto">
-            <div>
-                <h2 className="text-3xl text-black dark:text-white  font-bold my-6">A Stunning, Modern, and Responsive Web Theme</h2>
-                <p className="text-lg text-black dark:text-white font-medium mb-5">brings elegance and functionality together with a sleek, glassmorphic design, smooth transitions, and fully responsive layouts. Whether you're building a portfolio, a business website, or a personal blog, our theme ensures a visually stunning and seamless experience.</p>
+            <div className="flex-col space-y-4">
+                <Heading size="3xl" variant="drop-shadow-lg">Sleek, Modern, UI kits</Heading>
+                <Heading size="lg" variant="drop-shadow-lg">components made in react, but also usable class</Heading>
                 <div className="flex items-center justify-center">
-                <Button link="#" size="sm" variant="warning" icon="fa-brands fa-github" label="See on Github"/>
+                <Button link="https://github.com/ridhwanazharr/react-tailwind-ui" size="sm" variant="warning" icon="fa-brands fa-github" label="See on Github"/>
                 </div>
             </div>
             <div className="h-96 w-full">
                 <CardDemo />
             </div>
+        </div>
+        <div className="max-w-3/4 h-96 mx-auto">
+            <Card>
+                <Input label="Name" type="text" placeholder="your name.." icon="fa-regular fa-user" />
+                <Input label="Date" type="date"  icon="fa-regular fa-calendar-days" />
+            </Card>
         </div>
     </div>
     );

@@ -77,6 +77,12 @@
     @apply bg-orange-500/50 hover:bg-orange-300/50 text-black dark:bg-orange-800/50 hover:dark:bg-orange-500/50 dark:text-white backdrop-blur-xl drop-shadow-lg outline-1 outline-black/25 dark:outline-white/25 transition-colors duration-150 ease-in-out
   }
 
+  /* Datepicker */
+
+  .datepicker{
+    @apply w-80 absolute z-50 mt-4 py-2 px-2 backdrop-blur-lg drop-shadow-lg flex flex-col bg-white/50 dark:bg-black/70 text-black dark:text-white rounded-xl border-1 border-black/50 dark:border-white/50
+  }
+
   /* Dropdown */
 
   .dropdown-menu{
@@ -112,9 +118,63 @@
     @apply underline decoration-2 dark:decoration-white/50 decoration-black/50 underline-offset-6 bg-black/5 dark:bg-white/5
   }
 
-  /* Search Bar */
-  .search-bar{
+  /* Inputs */
+  .input{
     @apply rounded-full bg-zinc-950/10 dark:bg-white/10 dark:text-white font-light h-10 px-5 focus:outline-none border-black/15 dark:border-white/15 border-2 focus:border-zinc-950/50 focus:shadow-lg focus:bg-transparent  dark:focus:border-white transition-all duration-200
+  }
+
+  .input-icon{
+    @apply absolute top-3 right-3 text-black/25 dark:text-white/25
+  }
+
+  .input-icon.active{
+    @apply text-black/75 dark:text-white/75
+  }
+
+  /* Headings */
+
+  .heading-md {
+    @apply font-bold text-base text-black dark:text-white
+  }
+
+  .heading-lg {
+    @apply font-bold text-lg text-black dark:text-white
+  }
+
+  .heading-xl {
+    @apply font-bold text-xl text-black dark:text-white
+  }
+
+  .heading-2xl {
+    @apply font-bold text-2xl text-black dark:text-white
+  }
+
+  .heading-3xl {
+    @apply font-bold text-3xl text-black dark:text-white
+  }
+
+  .heading-4xl {
+    @apply font-bold text-4xl text-black dark:text-white
+  }
+
+  .heading-5xl {
+    @apply font-bold text-5xl text-black dark:text-white
+  }
+
+  .heading-6xl {
+    @apply font-bold text-6xl text-black dark:text-white
+  }
+
+  .heading-7xl {
+    @apply font-bold text-7xl text-black dark:text-white
+  }
+
+  .heading-8xl {
+    @apply font-bold text-8xl text-black dark:text-white
+  }
+
+  .heading-9xl {
+    @apply font-bold text-9xl text-black dark:text-white
   }
 }
 
