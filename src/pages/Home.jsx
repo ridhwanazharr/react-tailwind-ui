@@ -23,11 +23,16 @@ const Home = () => {
                 <CardDemo />
             </div>
         </div>
-        <div className="max-w-3/4 h-96 mx-auto">
-            <Card>
-                <Input label="Name" type="text" placeholder="your name.." icon="fa-regular fa-user" />
-                <Input label="Date" type="date"  icon="fa-regular fa-calendar-days" />
-            </Card>
+        <div className="max-w-3/4 mx-auto grid grid-cols-2">
+            <div>
+                <Card>
+                    <Input label="Name" type="text" placeholder="your name.." icon="fa-regular fa-user" />
+                    <Input label="Date" type="date"  icon="fa-regular fa-calendar-days" />
+                </Card>
+            </div>
+            <div>
+                <DatePicker />
+            </div>
         </div>
     </div>
     );

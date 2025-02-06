@@ -6,7 +6,7 @@ import SearchBar from "../components/SearchBar";
 
 const Layout = () => {
     return ( 
-        <div className="min-h-screen bg-cover bg-[url('/bigsur-light.jpg')] dark:bg-[url('/bigsur-dark.jpg')]">
+        <div className="min-h-screen bg-cover bg-[url('/bg-gradient-light.jpg')] dark:bg-[url('/bg-gradient-dark.jpg')]">
             <Navbar className="" links={['Home','Blogs']}>
                 <Dropdown className="my-auto px-3" label="Options">
                     <a className="dropdown-item"><i className="fa-solid fa-magnifying-glass dropdown-item-icon"></i> View</a>
