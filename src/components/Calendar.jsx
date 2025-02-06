@@ -62,9 +62,9 @@ const DatePicker = () => {
                 {curDate.toLocaleDateString("en-US", {weekday: "long",month: "long",day: "numeric"})}
             </div>
             <div className="flex space-x-1 mb-4 justify-between">
-                <button onClick={() => dateIncrement('-')}><i className="fa-solid fa-angle-left"></i></button>
+                <button className="ms-2 px-2 rounded-full hover:bg-white/25 cursor-pointer" onClick={() => dateIncrement('-')}><i className="fa-solid fa-angle-left"></i></button>
                 <p>{curDate.toLocaleDateString("en-US", { year: "numeric", month: "long" })}</p>
-                <button onClick={() => dateIncrement('+')}><i className="fa-solid fa-angle-right"></i></button>
+                <button className="ms-2 px-2 rounded-full hover:bg-white/25 cursor-pointer" onClick={() => dateIncrement('+')}><i className="fa-solid fa-angle-right"></i></button>
             </div>
             <Calendar year={year} month={month}/>
         </div>
