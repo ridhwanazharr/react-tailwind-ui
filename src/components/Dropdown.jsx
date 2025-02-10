@@ -11,12 +11,9 @@ const Dropdown = ({label, children, className}) => {
                     <i className='bi bi-caret-down'></i>
                 </div>
             </a>
-            {isOn && (
-            <div className="dropdown-menu" onBlur={() => setisOn(!isOn)}>
+            <div className={`dropdown-menu transform transition-all duration-150 ease-in-out ${isOn ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`} onBlur={() => setisOn(!isOn)}>
                 {children}
-            </div>)}
-            
-            
+            </div>
         </div> 
         
      );

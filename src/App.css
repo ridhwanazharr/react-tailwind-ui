@@ -14,7 +14,7 @@
   /* Card */
 
   .card{
-    @apply h-full w-full relative flex flex-col p-6 text-black dark:text-white  bg-white/50 dark:bg-black/60 rounded-lg drop-shadow-lg outline-2 outline-black/25 dark:outline-white/15
+    @apply overflow-x-hidden min-h-full min-w-full relative flex flex-col p-6 text-black dark:text-white  bg-white/50 dark:bg-black/60 rounded-lg drop-shadow-lg outline-2 outline-black/25 dark:outline-white/15
   }
 
   .card-close{
@@ -90,7 +90,7 @@
   /* Dropdown */
 
   .dropdown-menu{
-    @apply absolute z-50 mt-4 py-2 px-2  flex flex-col bg-white/50 dark:bg-black/70 text-black dark:text-white rounded-xl border-1 border-black/50 dark:border-white/50
+    @apply absolute z-50 mt-4 py-2 px-2  flex flex-col bg-zinc-100 dark:bg-zinc-950 text-black dark:text-white rounded-xl border-1 border-black/50 dark:border-white/50
   }
   .dropdown-item{
     @apply my-1 hover:bg-black/15 dark:hover:bg-white/25 px-2 py-0.5 min-w-40 rounded-lg flex items-center transition-all duration-150 ease-in-out
@@ -107,7 +107,7 @@
   /* Navbar */
 
   .navbar{
-    @apply z-20 max-w-full bg-white/50 dark:bg-black/60 mx-auto flex max-sm:flex-col px-6 py-4 shadow-lg relative
+    @apply max-w-full bg-white/50 dark:bg-black/60 mx-auto flex px-6 py-4 shadow-lg relative
   }
 
   .nav-logo{
@@ -124,7 +124,7 @@
 
   /* Inputs */
   .input{
-    @apply rounded-full bg-zinc-950/10 dark:bg-white/10 dark:text-white font-light h-10 px-5 focus:outline-none border-black/15 dark:border-white/15 border-2 focus:border-zinc-950/50 focus:shadow-lg focus:bg-transparent  dark:focus:border-white transition-all duration-200
+    @apply rounded-lg w-full bg-zinc-950/10 dark:bg-white/10 dark:text-white font-light h-10 px-5 focus:outline-none border-black/15 dark:border-white/15 border-2 focus:border-zinc-950/50 focus:shadow-lg focus:bg-transparent  dark:focus:border-white transition-all duration-200
   }
 
   .input-icon{
@@ -133,6 +133,12 @@
 
   .input-icon.active{
     @apply text-black/75 dark:text-white/75
+  }
+
+  /* Calendar */
+
+  .calendar-btn{
+    @apply w-12 h-10 rounded-full hover:bg-black/25 dark:hover:bg-white/25 cursor-pointer
   }
 
   /* Headings */

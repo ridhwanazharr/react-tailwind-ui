@@ -6,7 +6,7 @@ const SearchBar = () => {
 
     return ( 
         <div className="flex relative">
-            <input placeholder="Search..." className={`input ${isFocus === true ? 'max-w-96':'max-w-32'}`} type="text" onFocus={()=>setIsFocus(true)} onBlur={() => setIsFocus(false)}/>
+            <input placeholder="Search..." className={`input ${isFocus === true ? 'md:max-w-96':'Md:max-w-32'}`} type="text" onFocus={()=>setIsFocus(true)} onBlur={() => setIsFocus(false)}/>
             <i className={`bi bi-search absolute right-4 top-2 ${isFocus === true ? 'text-black dark:text-white':'text-black/25 dark:text-white/15'}`}></i>
         </div>
      );

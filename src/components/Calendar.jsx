@@ -35,7 +35,7 @@ const DatePicker = () => {
         }
 
         return (
-        <table className="text-center">
+        <table className="text-center my-2">
             <thead>
                 <tr><td>Sun</td><td>Mon</td><td>Tue</td><td>Wed</td><td>Thu</td><td>Fri</td><td>Sat</td></tr>
             </thead>
@@ -44,7 +44,7 @@ const DatePicker = () => {
                     <tr key={weekIndex}>
                         {week.map((day, daysIndex) =>
                         {return day != null ? 
-                            <td className={`w-12 h-10 rounded-full hover:bg-white/25 cursor-pointer ${curDate == day && 'bg-white/10'}`} onClick={() => handleClick(day)} key={daysIndex}>{day}</td>
+                            <td className={`calendar-btn ${curDate == day && 'bg-white/10'}`} onClick={() => handleClick(day)} key={daysIndex}>{day}</td>
                             : 
                             <td className={`w-12`} key={daysIndex}>{day}</td>
                         }
@@ -61,10 +61,10 @@ const DatePicker = () => {
             <div className="flex space-x-1 mb-2 border-b-1 border-white/25 py-2">
                 {curDate.toLocaleDateString("en-US", {weekday: "long",month: "long",day: "numeric"})}
             </div>
-            <div className="flex space-x-1 mb-4 justify-between">
-                <button className="ms-2 px-2 rounded-full hover:bg-white/25 cursor-pointer" onClick={() => dateIncrement('-')}><i className="fa-solid fa-angle-left"></i></button>
-                <p>{curDate.toLocaleDateString("en-US", { year: "numeric", month: "long" })}</p>
-                <button className="ms-2 px-2 rounded-full hover:bg-white/25 cursor-pointer" onClick={() => dateIncrement('+')}><i className="fa-solid fa-angle-right"></i></button>
+            <div className="flex mb-2 justify-between align-center">
+                <button className="calendar-btn" onClick={() => dateIncrement('-')}><i className="fa-solid fa-angle-left"></i></button>
+                <p className="text-center">{curDate.toLocaleDateString("en-US", { year: "numeric", month: "long" })}</p>
+                <button className="calendar-btn" onClick={() => dateIncrement('+')}><i className="fa-solid fa-angle-right"></i></button>
             </div>
             <Calendar year={year} month={month}/>
         </div>
