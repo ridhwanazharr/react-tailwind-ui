@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import useWindowSize from "../hooks/useWindowSize";
+import Notification from "./Notification";
+import ToggleDark from "./ToggleDark";
 
 const Navbar = ({className, children, links}) => {
     const isMobile = useWindowSize();
@@ -24,7 +26,7 @@ const Navbar = ({className, children, links}) => {
  
 
             {!isMobile ?
-                <><div className="flex-grow mx-auto flex"><ListLinks /></div> {children} </>
+                <><div className="flex-grow mx-auto flex"><ListLinks /></div><Notification /><ToggleDark /> </>
              : 
                 <> <div className="ms-auto flex max-xs:hidden">{children}</div> <div className="text-black dark:text-white ms-auto nav-links" onClick={() => setIsOpen(true)}><i className="fa-solid fa-bars"></i></div> </>
             }
