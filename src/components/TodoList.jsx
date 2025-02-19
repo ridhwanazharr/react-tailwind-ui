@@ -33,7 +33,7 @@ const TodoList = () => {
     const toggleComplete = (id) => setLists(lists.map((list) => (list.id === id ? {...list, completed : !list.completed} : list )));
 
     return ( 
-        <div className="card min-w-96">
+        <div className="card sm:min-w-96">
             <div className="card-header">
                 <h1>Todo List</h1>
             </div>

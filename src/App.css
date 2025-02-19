@@ -14,7 +14,7 @@
   /* Card */
 
   .card{
-    @apply overflow-x-hidden min-h-full min-w-full relative flex flex-col p-6 text-black dark:text-white  bg-white/50 dark:bg-black/60 rounded-lg drop-shadow-lg outline-2 outline-black/25 dark:outline-white/15
+    @apply overflow-x-hidden min-h-full min-w-full relative flex flex-col p-3 sm:p-6 text-black dark:text-white  bg-white/50 dark:bg-black/60 rounded-lg drop-shadow-lg outline-2 outline-black/25 dark:outline-white/15
   }
 
   .card-close{
@@ -113,7 +113,7 @@
   }
 
   .nav-logo{
-    @apply font-bold text-4xl bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent
+    @apply font-bold text-2xl sm:text-4xl bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent
   }
 
   .nav-links{
@@ -126,7 +126,7 @@
 
   /* Inputs */
   .input{
-    @apply rounded-lg w-full bg-zinc-950/10 dark:bg-white/10 dark:text-white font-light h-10 px-5 focus:outline-none border-black/15 dark:border-white/15 border-2 focus:border-zinc-950/50 focus:shadow-lg focus:bg-transparent  dark:focus:border-white transition-all duration-200
+    @apply rounded-lg min-w-0 w-full bg-zinc-950/10 dark:bg-white/10 dark:text-white font-light h-10 px-5 focus:outline-none border-black/15 dark:border-white/15 border-2 focus:border-zinc-950/50 focus:shadow-lg focus:bg-transparent  dark:focus:border-white transition-all duration-200
   }
 
   .input-icon{
@@ -182,39 +182,39 @@
   }
 
   .heading-xl {
-    @apply font-bold text-xl text-black dark:text-white
+    @apply font-bold text-lg sm:text-xl text-black dark:text-white
   }
 
   .heading-2xl {
-    @apply font-bold text-2xl text-black dark:text-white
+    @apply font-bold text-xl sm:text-2xl text-black dark:text-white
   }
 
   .heading-3xl {
-    @apply font-bold text-3xl text-black dark:text-white
+    @apply font-bold text-2xl sm:text-3xl text-black dark:text-white
   }
 
   .heading-4xl {
-    @apply font-bold text-4xl text-black dark:text-white
+    @apply font-bold text-2xl sm:text-4xl text-black dark:text-white
   }
 
   .heading-5xl {
-    @apply font-bold text-5xl text-black dark:text-white
+    @apply font-bold text-3xl sm:text-5xl text-black dark:text-white
   }
 
   .heading-6xl {
-    @apply font-bold text-6xl text-black dark:text-white
+    @apply font-bold text-3xl sm:text-6xl text-black dark:text-white
   }
 
   .heading-7xl {
-    @apply font-bold text-7xl text-black dark:text-white
+    @apply font-bold text-4xl sm:text-7xl text-black dark:text-white
   }
 
   .heading-8xl {
-    @apply font-bold text-8xl text-black dark:text-white
+    @apply font-bold text-5xl sm:text-8xl text-black dark:text-white
   }
 
   .heading-9xl {
-    @apply font-bold text-9xl text-black dark:text-white
+    @apply font-bold text-5xl sm:text-9xl text-black dark:text-white
   }
 }
 
