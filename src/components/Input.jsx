@@ -1,7 +1,6 @@
 import {useState} from 'react';
-import DatePicker from './DatePicker';
 
-const Input = ({placeholder, type, icon, label}) => {
+const Input = ({placeholder, type, icon, label, style}) => {
     const [isFocus, setIsFocus] = useState(false);
 
     return (
@@ -9,7 +8,7 @@ const Input = ({placeholder, type, icon, label}) => {
         <label className="ms-2">{label}</label>
         <div onFocus={() => {setIsFocus(true)}} onBlur={() => setIsFocus(false)} className="flex items-center">
             <div className="relative">
-                <input className="input pr-10" placeholder={placeholder} type={type} />
+                <input className={`input pr-10 ${style}`} placeholder={placeholder} type={type} />
                 <i className={`input-icon ${isFocus && 'active'} ${icon}`}></i>
             </div>
         </div>

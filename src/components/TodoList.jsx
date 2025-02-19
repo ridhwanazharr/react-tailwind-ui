@@ -33,18 +33,20 @@ const TodoList = () => {
     const toggleComplete = (id) => setLists(lists.map((list) => (list.id === id ? {...list, completed : !list.completed} : list )));
 
     return ( 
-        <div className="card">
+        <div className="card min-w-96">
             <div className="card-header">
                 <h1>Todo List</h1>
             </div>
             <div className="card-body">
-                <div className="flex">
-                    <Input placeholder="Add new task.."/>
-                    <button className="mx-1 text-2xl px-1 hover:bg-white/25"><i className="fa-solid fa-plus my-auto"></i></button>
+                <div className="flex my-1">
+                  <div className="flex-grow">
+                    <Input style="rounded-full" placeholder="Add new task.."/>
+                  </div>
+                  <button className="mx-1 px-2 text-lg hover:bg-white/25 rounded-full"><i className="fa-solid fa-plus my-auto"></i></button>
                 </div>
-                <ul className="flex flex-col gap-y-2 mt-2">
+                <ul className="todo">
                 {lists.map((list) => 
-                    <li className={`px-2 rounded-lg cursor-pointer ${list.completed ? 'line-through opacity-50' :  'hover:bg-white/25'}`}
+                    <li className={`todolist ${list.completed ? 'line-through opacity-50' :  'hover:bg-white/25'}`}
                     onClick={() => toggleComplete(list.id)} key={list.id}>{list.title}</li>
                 )}
                 </ul>

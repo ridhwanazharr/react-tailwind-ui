@@ -63,7 +63,7 @@ const DatePicker = () => {
             </div>
             <div className="flex mb-2 justify-between align-center">
                 <button className="calendar-btn" onClick={() => dateIncrement('-')}><i className="fa-solid fa-angle-left"></i></button>
-                <p className="text-center">{curDate.toLocaleDateString("en-US", { year: "numeric", month: "long" })}</p>
+                <p className="text-center my-auto">{curDate.toLocaleDateString("en-US", { year: "numeric", month: "long" })}</p>
                 <button className="calendar-btn" onClick={() => dateIncrement('+')}><i className="fa-solid fa-angle-right"></i></button>
             </div>
             <Calendar year={year} month={month}/>

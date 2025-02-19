@@ -28,7 +28,7 @@ const Navbar = ({className, children, links}) => {
             {!isMobile ?
                 <><div className="flex-grow mx-auto flex"><ListLinks /></div><Notification /><ToggleDark /> </>
              : 
-                <> <div className="ms-auto flex max-xs:hidden">{children}</div> <div className="text-black dark:text-white ms-auto nav-links" onClick={() => setIsOpen(true)}><i className="fa-solid fa-bars"></i></div> </>
+                <> <div className="ms-auto flex max-xs:hidden">{children}</div> <div className="flex"><Notification /><ToggleDark /></div> <div className="text-black dark:text-white ms-auto nav-links" onClick={() => setIsOpen(true)}><i className="fa-solid fa-bars"></i></div> </>
             }
 
 
