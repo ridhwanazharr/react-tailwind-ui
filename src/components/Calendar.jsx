@@ -57,7 +57,7 @@ const DatePicker = () => {
     }
 
     return ( 
-        <div className="card w-80">
+        <div className="card w-full md:w-80">
             <div className="flex space-x-1 mb-2 border-b-1 border-white/25 py-2">
                 {curDate.toLocaleDateString("en-US", {weekday: "long",month: "long",day: "numeric"})}
             </div>
