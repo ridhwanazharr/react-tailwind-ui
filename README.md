@@ -2,6 +2,8 @@
 
 A collection of reusable UI components built with React and Tailwind CSS.
 
+See the [Live Demo](https://rawing-glassui.vercel.app/) here.
+
 ## 🚀 Features
 - Pre-built, customizable UI components.
 - Fully responsive and mobile-friendly.
@@ -42,7 +44,4 @@ Feel free to fork the repository, create a branch, and submit a pull request wit
 
 ## 📜 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## 📞 Contact
-For any inquiries, reach out via GitHub issues or email me at [your-email@example.com].
 
