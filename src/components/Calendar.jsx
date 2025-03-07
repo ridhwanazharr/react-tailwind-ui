@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import Card from './Card';
 
 const DatePicker = () => {
     const [curDate, setCurDate] = useState(new Date());
@@ -57,7 +58,7 @@ const DatePicker = () => {
     }
 
     return ( 
-        <div className="card w-full md:w-80">
+        <Card>
             <div className="flex space-x-1 mb-2 border-b-1 border-white/25 py-2">
                 {curDate.toLocaleDateString("en-US", {weekday: "long",month: "long",day: "numeric"})}
             </div>
@@ -67,7 +68,7 @@ const DatePicker = () => {
                 <button className="calendar-btn" onClick={() => dateIncrement('+')}><i className="fa-solid fa-angle-right"></i></button>
             </div>
             <Calendar year={year} month={month}/>
-        </div>
+        </Card>
      );
 }
  

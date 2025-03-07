@@ -1,8 +1,10 @@
 import {useState} from 'react';
 import NotificationItem from './NotificationItem'
 import useWindowSize from "../hooks/useWindowSize";
+import useBlurStore from '../store/blurStore';
 
 const Notification = ({children}) => {
+    const { isBlurred } = useBlurStore();
     const isMobile = useWindowSize();
     const [isOpen, setIsOpen] = useState(false);
 
@@ -14,8 +16,8 @@ const Notification = ({children}) => {
             {!isMobile ?
             <>
                 <div className={`absolute right-0 transform transition-all duration-150 ${isOpen ? 'scale-y-100 z-50 opacity-100' : 'scale-y-0 -z-50 opacity-0'}`}>
-                    <div className="notification-menu">
-                        <div className="notification-header">
+                    <div className={`notification-menu ${isBlurred && 'bg-blur'}`}>
+                        <div className={`notification-header ${isBlurred && 'bg-blur'}`}>
                             <h1>Notification</h1>
                             <p>Mark all as read</p>
                         </div>
@@ -32,8 +34,8 @@ const Notification = ({children}) => {
             </>
                 : 
             <>
-                <div className={`notification-menu-mobile ${isOpen ? 'z-50 translate-x-0' : '-z-50 translate-x-full'}`}>
-                    <div className="notification-header">
+                <div className={`notification-menu-mobile ${isBlurred && 'bg-blur'} ${isOpen ? 'z-50 translate-x-0 scale-x-100' : 'scale-x-0 z-0 translate-x-full'}`}>
+                    <div className={`notification-header ${isBlurred && 'bg-blur'}`}>
                         <button className="opacity-75" onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-chevron-left"></i> Back</button>
                         <h1 className="">Notification</h1>
                     </div>

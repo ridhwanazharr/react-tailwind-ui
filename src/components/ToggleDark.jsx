@@ -21,19 +21,10 @@ const ToggleDark = () => {
     }
   }, []);
 
-  const icon = isDark
-    ? <i className="bi bi-moon-stars"></i>
-    : <i className="bi bi-sun"></i>;
-
   return (
-    <a
-      href="#"
-      id="toggleDark"
-      className="text-2xl text-zinc-950 dark:text-white my-auto px-3"
-      onClick={setTheme}
-    >
-      {icon}
-    </a>
+    <div onClick={() => setTheme()} className="flex rounded-full outline-1 outline-zinc-900 dark:outline-zinc-200 h-6 w-12 transition-all duration-150">
+        <div className={`bg-zinc-900 dark:bg-zinc-200 rounded-full h-5 w-5 transition-all duration-150 my-auto ${!isDark ? 'translate-x-1' : 'translate-x-6'}`}></div>
+    </div>
   );
 };
 

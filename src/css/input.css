@@ -1,0 +1,11 @@
+.input{
+    @apply rounded-lg min-w-0 w-full bg-zinc-950/10 dark:bg-white/10 dark:text-white font-light h-10 px-5 focus:outline-none border-black/15 dark:border-white/15 border-2 focus:border-zinc-950/50 focus:shadow-lg focus:bg-transparent  dark:focus:border-white transition-all duration-200
+  }
+
+.input-icon{
+@apply absolute top-3 right-3 text-black/25 dark:text-white/25
+}
+
+.input-icon.active{
+@apply text-black/75 dark:text-white/75
+}

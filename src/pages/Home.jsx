@@ -13,7 +13,7 @@ const Home = () => {
     <div>
         <div className="max-w-9/10 lg:max-w-3/4 grid md:grid-cols-2 grid-cols-1 gap-4 mx-auto mt-12">
             <div className="flex-col space-y-4">
-                <Heading size="4xl" variant="drop-shadow-lg">React UI components with pre-styled classes. open source</Heading>
+                <Heading size="4xl" variant="drop-shadow-lg mt-5">React UI components with pre-styled classes. open source</Heading>
                 <div className="flex items-center justify-center">
                 <Button link="https://github.com/ridhwanazharr/react-tailwind-ui" size="sm" variant="warning" icon="fa-brands fa-github" label="See on Github"/>
                 </div>

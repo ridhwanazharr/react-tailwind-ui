@@ -1,0 +1,43 @@
+.heading-md {
+    @apply font-bold text-base text-black dark:text-white
+  }
+
+.heading-lg {
+@apply font-bold text-lg text-black dark:text-white
+}
+
+.heading-xl {
+@apply font-bold text-lg sm:text-xl text-black dark:text-white
+}
+
+.heading-2xl {
+@apply font-bold text-xl sm:text-2xl text-black dark:text-white
+}
+
+.heading-3xl {
+@apply font-bold text-2xl sm:text-3xl text-black dark:text-white
+}
+
+.heading-4xl {
+@apply font-bold text-2xl sm:text-4xl text-black dark:text-white
+}
+
+.heading-5xl {
+@apply font-bold text-3xl sm:text-5xl text-black dark:text-white
+}
+
+.heading-6xl {
+@apply font-bold text-3xl sm:text-6xl text-black dark:text-white
+}
+
+.heading-7xl {
+@apply font-bold text-4xl sm:text-7xl text-black dark:text-white
+}
+
+.heading-8xl {
+@apply font-bold text-5xl sm:text-8xl text-black dark:text-white
+}
+
+.heading-9xl {
+@apply font-bold text-5xl sm:text-9xl text-black dark:text-white
+}

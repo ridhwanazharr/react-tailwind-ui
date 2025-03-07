@@ -1,0 +1,31 @@
+.card{
+    @apply min-h-full min-w-full relative flex flex-col p-3 sm:p-6 text-black dark:text-white  bg-white/50 dark:bg-black/60 rounded-lg drop-shadow-lg outline-1 outline-black/25 dark:outline-white/15
+  }
+
+.card.bg-blur{
+@apply backdrop-blur-xl bg-zinc-300/20 dark:bg-black/50 outline-1 outline-black/5 dark:outline-white/5
+}
+
+.card .card-close{
+@apply absolute top-1 right-2 text-xl text-black/50 dark:text-white/50 hover:text-red-600 transition-colors duration-150 ease-in-out
+}
+
+.card .card-header{
+@apply flex pb-3 border-b-1 dark:border-white/25 border-black/25 font-bold
+}
+
+.card .card-profile{
+@apply w-15 h-15 rounded-full border-1 dark:border-white/50 border-black/50
+}
+
+.card .card-profile-text{
+@apply ms-4 flex-col font-medium
+}
+
+.card .card-content{
+@apply flex-grow py-3 font-medium
+}
+
+.card .card-footer{
+@apply pt-3 flex space-x-2 border-t-1 dark:border-white/25 border-black/25
+}

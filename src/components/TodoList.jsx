@@ -1,7 +1,10 @@
 import {useState} from 'react';
 import Input from './Input';
+import Card from './Card';
+import useBlurStore from '../store/blurStore';
 
 const TodoList = () => {
+    
 
     const [lists, setLists] = useState([
         {
@@ -33,7 +36,7 @@ const TodoList = () => {
     const toggleComplete = (id) => setLists(lists.map((list) => (list.id === id ? {...list, completed : !list.completed} : list )));
 
     return ( 
-        <div className="card">
+        <Card>
             <div className="card-header">
                 <h1>Todo List</h1>
             </div>
@@ -51,7 +54,7 @@ const TodoList = () => {
                 )}
                 </ul>
             </div>
-        </div>
+        </Card>
      );
 }
  

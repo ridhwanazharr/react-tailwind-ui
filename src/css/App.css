@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "./hljs.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: InterVariable, sans-serif;
+}
+
+@layer components {
+
+
+  @import "./card.css";
+  @import "./button.css";
+  @import './dropdown.css';
+  @import './navbar.css';
+  @import './input.css';
+  @import './select.css';
+  @import './notification.css';
+  @import './headings.css';
+
+  /* Code Block */
+
+  .code-block{
+    @apply h-full w-full m-2 p-6 font-bold rounded-lg drop-shadow-lg border-1 border-black/25 dark:border-white/25
+  }
+
+
+  /* Datepicker */
+
+  .datepicker{
+    @apply w-80 absolute z-50 mt-4 py-2 px-2 drop-shadow-lg flex flex-col bg-white/50 dark:bg-black/70 text-black dark:text-white rounded-xl border-1 border-black/50 dark:border-white/50
+  }
+
+  /* Calendar */
+
+  .calendar-btn{
+    @apply hover:bg-black/25 dark:hover:bg-white/25
+  }
+
+  /* Calendar */
+
+  .calendar-btn{
+    @apply w-12 h-10 rounded-full hover:bg-black/25 dark:hover:bg-white/25 cursor-pointer
+  }
+
+  /* Todo List*/
+
+  .todo{
+    @apply flex flex-col gap-y-2 mt-2
+  }
+
+  .todolist{
+    @apply px-2 py-0.5 rounded-lg cursor-pointer
+  }
+
+}
+
+

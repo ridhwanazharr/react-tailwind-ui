@@ -1,0 +1,19 @@
+.navbar{
+    @apply relative z-10 w-full bg-white/50 dark:bg-black/60 mx-auto flex px-6 py-4 shadow-lg
+  }
+
+.navbar.bg-blur{
+@apply backdrop-blur-xl bg-white/10 dark:bg-black/60 outline-1 outline-black/5 dark:outline-white/5
+}
+
+.navbar .nav-logo{
+@apply font-bold text-2xl sm:text-4xl bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent
+}
+
+.navbar .nav-links{
+@apply  px-3 py-1 mx-0.5 flex justify-center items-center text-center rounded-xl transition duration-150 ease-in-out  text-black dark:text-white hover:bg-black/10 dark:hover:bg-white/10
+}
+
+.navbar .nav-links-active{
+@apply underline decoration-2 dark:decoration-white/50 decoration-black/50 underline-offset-6 bg-black/5 dark:bg-white/5
+}

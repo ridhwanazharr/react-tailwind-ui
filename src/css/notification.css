@@ -1,0 +1,27 @@
+.notification-menu{
+    @apply text-black dark:text-white bg-gray-200 dark:bg-zinc-900 rounded-lg outline-1 overflow-clip outline-black/25 dark:outline-white/25 absolute text-base right-0 min-w-80  min-h-72 max-h-96 drop-shadow-lg
+}
+
+.notification-menu.bg-blur{
+    @apply backdrop-blur-xl bg-zinc-300/45 dark:bg-black/75
+}
+
+.notification-header{
+    @apply text-black dark:text-white flex relative py-4 px-2 bg-zinc-300 dark:bg-zinc-800 justify-between align-middle
+}
+
+.notification-header.bg-blur{
+    @apply backdrop-blur-xl bg-sky-400/15 dark:bg-rose-800/25 border-b-1 border-black/25 dark:border-white/25
+}
+
+.notification-menu-mobile{
+    @apply text-black dark:text-white fixed inset-0 min-h-screen min-w-screen bg-zinc-200 dark:bg-zinc-900 z-50 transition-all duration-150
+}
+
+.notification-menu-mobile.bg-blur{
+    @apply backdrop-blur-xl bg-white/10 dark:bg-black/75
+}
+
+.notification-item{
+    @apply text-black dark:text-white hover:bg-zinc-300 select-none dark:hover:bg-zinc-700 flex gap-x-3 text-sm px-2 py-2
+}
